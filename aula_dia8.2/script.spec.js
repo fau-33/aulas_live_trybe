@@ -1,7 +1,7 @@
 const multiply = require('./script');
 const { infoPizzas, priceLessThan, everyPriceBiggerThan, findPizza, sortPizzas } = require('./pizzas');
 
-describe('Testando HoF forEach().', () => {
+/* describe('Testando HoF forEach().', () => {
   it('Verifica se a função multiply existe.', () => {
     expect(typeof multiply).toBe('function');
   })
@@ -10,26 +10,26 @@ describe('Testando HoF forEach().', () => {
     expect(multiply([1, 2, 3, 4, 5], 2)).toEqual([2, 4, 6, 8, 10]);
   })
 
-  it('Multiplica cada elemento por 3', () => {
+   it('Multiplica cada elemento por 3', () => {
     expect(multiply([1, 2, 3, 4, 5], 3)).toEqual([3, 6, 9, 12, 15]);
-  })
+  }) 
 
-  it('Multiplica cada elemento por 845', () => {
-    expect(multiply([1, 2, 3, 4, 5], 845)).toEqual([845, 1690, 2535, 3380, 4225]);
+   it('Multiplica cada elemento por 845', () => {
+    expect(multiply([1, 2, 3, 4, 5], 845)).toEqual([845, 1690, 2535, 3380, 4225]); 
   })
-});
+}); */
 
-// describe('Testa a função infoPizzas', () => {
-//   it('Verifica se a pizza é paga ou grátis', () => {
-//     expect(infoPizzas()).toEqual([
-//       { flavor: 'Frango com Catupiry', price: 12.20, type: 'Pizza paga' },
-//       { flavor: 'Marguerita', price: 13.50, type: 'Pizza paga'},
-//       { flavor: 'Gratinada', price: 15.32, type: 'Pizza paga'},
-//       { flavor: 'Quatro Queijos', price: 13.50, type: 'Pizza paga' },
-//       { flavor: 'Xablau com um pouquinho assim de molho', price: 0, type: 'Pizza grátis' }
-//     ])
-//   })
-// });
+ describe('Testa a função infoPizzas', () => {
+   it('Verifica se a pizza é paga ou grátis', () => {
+     expect(infoPizzas()).toEqual([
+       { flavor: 'Frango com Catupiry', price: 12.20, type: 'Pizza paga' },
+       { flavor: 'Marguerita', price: 13.50, type: 'Pizza paga'},
+       { flavor: 'Gratinada', price: 15.32, type: 'Pizza paga'},
+       { flavor: 'Quatro Queijos', price: 13.50, type: 'Pizza paga' },
+       { flavor: 'Xablau com um pouquinho assim de molho', price: 0, type: 'Pizza grátis' }
+     ])
+   })
+ });
 
 /* describe('Testa a função priceLessThan', () => {
   it('Verifica se existe alguma pizza com um preço menor do que 15', () => {

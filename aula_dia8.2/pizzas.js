@@ -6,10 +6,9 @@ const pizzas = [
   { flavor: 'Xablau com um pouquinho assim de molho', price: 0 }
 ];
 
+
+
 module.exports = {
   infoPizzas,
-  priceLessThan,
-  everyPriceBiggerThan,
-  findPizza,
-  sortPizzas,
+  
 };
