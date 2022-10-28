@@ -35,6 +35,11 @@ const findPizza = (number) => {
 }
 //console.log(findPizza(13.50));
 
+// const array = [1, 4, 6, 11, 2, 8, 3, 9];
+// const words = ['ana', 'jacare', 'xablau', 'bubble', 'renan'];
+// console.log(array.sort((a, b) => b - a));
+// console.log(words.sort());
+
 // SORT()
 const sortPizzas = (key) => {
   if(key === 'flavor'){
