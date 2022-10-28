@@ -6,6 +6,18 @@ const pizzas = [
   { flavor: 'Xablau com um pouquinho assim de molho', price: 0 }
 ];
 
+const infoPizzas = () => {
+  pizzas.forEach((pizza) => {
+    if(pizza.price > 0) {
+      pizza.type = 'Pizza paga';
+    }else {
+      pizza.type = 'Pizza grátis';
+    }
+  })
+  return pizzas;
+}
+
+//console.log(infoPizzas());
 
 
 module.exports = {
