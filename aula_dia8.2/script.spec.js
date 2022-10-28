@@ -19,7 +19,7 @@ const { infoPizzas, priceLessThan, everyPriceBiggerThan, findPizza, sortPizzas }
   })
 }); */
 
- describe('Testa a função infoPizzas', () => {
+ /* describe('Testa a função infoPizzas', () => {
    it('Verifica se a pizza é paga ou grátis', () => {
      expect(infoPizzas()).toEqual([
        { flavor: 'Frango com Catupiry', price: 12.20, type: 'Pizza paga' },
@@ -29,7 +29,7 @@ const { infoPizzas, priceLessThan, everyPriceBiggerThan, findPizza, sortPizzas }
        { flavor: 'Xablau com um pouquinho assim de molho', price: 0, type: 'Pizza grátis' }
      ])
    })
- });
+ }); */
 
 /* describe('Testa a função priceLessThan', () => {
   it('Verifica se existe alguma pizza com um preço menor do que 15', () => {
