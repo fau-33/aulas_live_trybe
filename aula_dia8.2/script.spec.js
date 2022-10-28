@@ -54,12 +54,12 @@ const { infoPizzas, priceLessThan, everyPriceBiggerThan, findPizza, sortPizzas }
     expect(everyPriceBiggerThan(0)).toBe(true);
   });
 });
-
+ */
 describe('Testa a função findPizza', () => {
   it('Imprime a primeira pizza com valor igual a 13.50', () => {
     expect(findPizza(13.50)).toEqual({ flavor: 'Marguerita', price: 13.5 });
   });
-}); */
+});
 
 /* describe('Testa a função sortPizza', () => {
   it('Ordena as pizzas por preço', () => {

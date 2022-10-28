@@ -23,10 +23,16 @@ const priceLessThan = (number) => {
    return pizza.price < number;
   })
 }
-
+// EVERY()
+const everyPriceBiggerThan = (number) => {
+  return pizzas.every((pizza) => {
+    return pizza.price >= number;
+  })
+}
 
 module.exports = {
   infoPizzas,
   priceLessThan,
+  everyPriceBiggerThan,
   
 };
