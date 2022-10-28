@@ -29,10 +29,27 @@ const everyPriceBiggerThan = (number) => {
     return pizza.price >= number;
   })
 }
+// FIND()
+const findPizza = (number) => {
+  return pizzas.find((pizza) => pizza.price === number);
+}
+//console.log(findPizza(13.50));
+
+// SORT()
+const sortPizzas = (key) => {
+  if(key === 'flavor'){
+    return pizzas.sort((a, b) => a[key].localeCompare(b[key]));
+  } else if(key === 'price'){
+    return pizzas.sort((a, b) => a.price - b.price);
+  } else {
+    return 'Parâmetro inválido';
+  }
+}
 
 module.exports = {
   infoPizzas,
   priceLessThan,
   everyPriceBiggerThan,
-  
+  findPizza,
+  sortPizzas,
 };
