@@ -12,6 +12,14 @@ const cities = [
   { state: 'MG', name: 'João Pinheiro', region: 'SE'}
 ];
 // 1. Encontre todas as cidades da região Nordeste (NE)
+const citiesNENames = () => {
+  return cities.filter((city) => city.region === 'NE')
+  .map((city) => city.name);
+}
 
-
+console.log(citiesNENames());
+/* let arrayCities = [];
+  citiesNEFilter.forEach((city) => arrayCities.push(city.name));
+  return arrayCities;
+ */
 // 2. Encontre todas as cidades que comecem com a letra C
