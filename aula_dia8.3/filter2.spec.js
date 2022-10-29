@@ -1,4 +1,4 @@
-/* const { filterNoDriver, users } = require('./filter2');
+const { filterNoDriver, users } = require('./filter2');
 
 describe('The function filterNoDriver ', () => {
   it('is a function', () => {
@@ -12,4 +12,4 @@ describe('The function filterNoDriver ', () => {
       { firstName: 'Maggie', lastName: 'Simpson', isDriver: false }
     ]);
   });
-}); */
+});
