@@ -17,9 +17,15 @@ const citiesNENames = () => {
   .map((city) => city.name);
 }
 
-console.log(citiesNENames());
+//console.log(citiesNENames());
 /* let arrayCities = [];
   citiesNEFilter.forEach((city) => arrayCities.push(city.name));
   return arrayCities;
  */
 // 2. Encontre todas as cidades que comecem com a letra C
+
+const filterCitiesName = (letter) => {
+  //return cities.filter((city) => city.name[0] === letter);
+  return cities.filter((city) => city.name.startsWith(letter));
+}
+console.log(filterCitiesName('C'));
