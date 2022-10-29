@@ -7,9 +7,11 @@ const users = [
 ];
 
 const filterNoDriver = (users) => {
-  return users.filter((user) => user.isDriver === false);
+  const drivers = users.filter((user) => user.isDriver === false);
+  drivers.forEach((driver) => driver.fullName = `${driver.firstName} ${driver.lastName}`);
+  return drivers;
 }
-//console.log(filterNoDriver(users));
+console.log(filterNoDriver(users));
 
 module.exports = {
   filterNoDriver,

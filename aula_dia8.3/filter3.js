@@ -11,3 +11,7 @@ const cities = [
   { state: 'TO', name: 'Três Pedras', region: 'N'},
   { state: 'MG', name: 'João Pinheiro', region: 'SE'}
 ];
+// 1. Encontre todas as cidades da região Nordeste (NE)
+
+
+// 2. Encontre todas as cidades que comecem com a letra C
