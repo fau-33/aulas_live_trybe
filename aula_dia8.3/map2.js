@@ -33,3 +33,30 @@ const cities = [
   { state: 'MG', name: 'João Pinheiro', region: 'SE'},
   { state: 'MT', name: 'Cuiabá', region: 'CW'},
 ];
+
+// Transforme o array de objetos cities em um array de objetos no seguinte formato:
+// {
+//   state: "Amazonas",
+//   city: "Manaus",
+//   region: "Norte"
+// }
+
+const arrayCities = cities.map((city) => {
+  const findState = states.find((state) => state.short === city.state);
+  const findRegion = regions.find((region) => region.short === city.region);
+  return {
+    state: findState.name,
+    city: city.name,
+    region: findRegion.name
+  }
+})
+
+console.log(arrayCities);
+
+//E SE EU QUISER SABER TODOS OS ESTADOS E CIDADES DE UMA DETERMINADA REGIÃO?
+//FORMATO:
+// {
+//   region: "NE",
+//   states: ["Estado1", "Estado2"],
+//   cities: ["Cidade1", "Cidade2"],
+// }
